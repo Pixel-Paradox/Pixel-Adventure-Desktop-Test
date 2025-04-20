@@ -1,0 +1,154 @@
+.bgMenu {
+
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    z-index: 4000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s; 
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.bgMenu.active {
+
+    visibility: visible; 
+    opacity: 1;
+
+}
+
+.menu {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3000;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 40px;
+
+}
+
+.btn {
+
+    z-index: 2000;
+    width: 400px;
+    display: flex;            
+    justify-content: center;    
+    align-items: center; 
+    height: max-content;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.325);
+    color: white;
+    font-size: 1.5em;
+    transition: 1s;
+    box-shadow : 9px 9px 1px rgba(255, 255, 255, 0.217);
+    cursor: none;
+
+}
+
+.bgMenu.active .btn {
+
+    cursor: pointer;
+    
+}
+
+.bgMenu.active .touche {
+
+    cursor: default;
+    
+}
+ 
+.btn:hover, .inputSize:focus {
+
+    scale: 1.1;
+}
+
+.size {
+
+    display: flex;          
+    gap: 20px; 
+
+}
+
+.progressBlock {
+
+    display: flex;
+    gap: 5px;
+
+}
+
+.progressBarBlock {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;  
+
+}
+
+.progressBar {
+
+    width: 0;
+    height: 15px;
+    border-radius: 7px;
+    background-color: green;
+
+}
+
+.progressBar:nth-child(2) {
+
+    background-color: gray;
+    z-index: -1;
+    width: 350px;
+    margin-top: -15px; 
+
+}
+
+.touche {
+
+    flex-direction: column;          
+    gap: 20px;
+    height: max-content;
+
+}
+
+.touche:hover {  
+
+    height: max-content;
+
+}
+
+.inputSize {
+
+    border: none;
+    width: 190px;
+    display: flex;
+    outline: none;
+    text-align: center;
+    appearance: textfield;
+
+}
+
+.inputSize::-webkit-inner-spin-button,
+.inputSize::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+
+::placeholder {
+
+    color: white;
+
+}

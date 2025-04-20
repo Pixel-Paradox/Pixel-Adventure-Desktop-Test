@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="Site/Css/pixel-adventure-desktop.css">
+        <link rel="stylesheet" type="text/css" href="Site/Css/menu.css">
+        <link rel="stylesheet" type="text/css" href="Site/Css/respensive.css">
+
+        <script defer src="Site/Js/JsSite/menu.js"></script>
+
+        <script defer src="Site/Js/JsGame/TiledData/collisionsMapAll.js"></script>
+        <script defer src="Site/Js/JsGame/TiledData/collisionsMap1.js"></script>
+        <script defer src="Site/Js/JsGame/TiledData/collisionsMap2.js"></script>
+        <script defer src="Site/Js/JsGame/TiledData/wFrontMap1.js"></script>
+
+        <script defer src="Site/Js/JsGame/pixel-adventure-desktop.js"></script>
+        <script defer src="Site/Js/JsGame/classes.js"></script>
+        <script defer src="Site/Js/JsGame/collisions.js"></script>
+        <script defer src="Site/Js/JsGame/sprite.js"></script>
+        <script defer src="Site/Js/JsGame/play.js"></script>
+
+        <link rel="icon" href="Site/ImageSite/pixel-adventure-desktop.png" type="image/png">
+        <link rel="icon" type="image/svg+xml" href="Site/ImageSite/pixel-adventure-desktop.svg">
+        <link rel="icon" href="Site/ImageSite/pixel-adventure-desktop.ico" type="image/x-icon">
+        <title>Pad-Test</title>
+    </head>
+
+    <body>
+
+        <div class="bgMenu">
+            <div class="menu">
+                <div class="reprendre btn">Reprendre</div>
+                <div class="size">
+                    <input type="number" class="inputSize btn" pattern="[0-9]*" placeholder="Largeur" min="1" max="100" inputmode="numeric">
+                    <input type="number" class="inputSize btn" pattern="[0-9]*" placeholder="Hauteur" min="1" max="100" inputmode="numeric" >
+                </div>
+                <div class="musique btn">Musique activé</div>
+                <div class="ecran btn">Plein écran désactivé</div>
+                <div class="btn recommencer">Recommencez</div>
+                <div class="touche btn">
+                    <div class="progressBlock">
+                        <p>Pourcentage du jeu fini:  <p class="progressScore">0</p>%</p>
+                    </div>
+                    <div class="progressBarBlock">
+                        <div class="progressBar"></div>
+                        <div class="progressBar"></div>
+                    </div>
+                </div>
+                <div class="touche btn">
+                    <p>q = ouvrir le menu</p>
+                    <p>w = avancer</p>
+                    <p>s = reculer</p>
+                    <p>a = se deplacer à gauche</p>
+                    <p>d = se deplacer à droite</p>
+                    <p>e = ouvrir les cartes</p>
+                    <p>f = boire les potions de rapidité</p>
+                    <p>r = boire les potions de régénération</p>
+                </div>
+            </div>
+        </div>
+
+        <canvas></canvas>
+
+    </body>
+</html>

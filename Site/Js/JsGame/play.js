@@ -112,7 +112,7 @@ function animate() {
                                 ...boundary,
                                 position: {
                                     x: boundary.position.x,
-                                    y: boundary.position.y + 2
+                                    y: boundary.position.y
                                 }
                             }
                         })
@@ -164,7 +164,7 @@ function animate() {
                                     ...boundary,
                                     position: {
                                         x: boundary.position.x,
-                                        y: boundary.position.y - 2
+                                        y: boundary.position.y
                                     }
                                 }
                             })
